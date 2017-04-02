@@ -18,7 +18,7 @@ while True:
             possible.append(str(i))
         while True:
             if accelerometer.was_gesture("shake"):
-                display.show(random.choice(possible))
+                display.scroll(random.choice(possible))
                 sleep(3000)
                 display.clear()
             if button_a.is_pressed():
