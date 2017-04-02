@@ -11,6 +11,8 @@ while True:
     wybor -= button_b.get_presses()
     if wybor < 2:
         wybor = 2
+    elif wybor > 200:
+        wybor = 200
     display.scroll(str(wybor))
     reading = accelerometer.get_x()
     if reading > 50:
