@@ -1,5 +1,9 @@
 from microbit import *
-import music
+display.off()
 while True:
-    display.scroll(str(int(pin0.read_analog())*(3.3/1023)))
+    if button_a.is_pressed():
+        pin0.write_digital(1)
+        pin0.set_analog_period(400000)
+    elif button_b.is_pressed():
+        pin0.write_analog(0)
     

@@ -30,7 +30,6 @@ man3 = Image(
     "00900:"
     "09090:"
     "09090")
-    
-    
+      
 man = [man0, man1, man2, man3]
 display.show(man, loop = True, delay=100)

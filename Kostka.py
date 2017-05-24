@@ -14,8 +14,8 @@ while True:
     elif wybor > 200:
         wybor = 200
     display.scroll(str(wybor))
-    reading = accelerometer.get_x()
-    if reading > 50:
+    
+    if pin0.is_touched():
         for i in range(1, wybor+1):
             possible.append(str(i))
         while True:
